@@ -1,10 +1,12 @@
 package com.example.studentdetail.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.example.studentdetail.entity.details;
 
-public interface StudentRespository extends JpaRepository <details ,Integer>{
+import com.example.studentdetail.entity.Details;
 
-	details save(details d);
+public interface StudentRespository extends JpaRepository <Details ,Integer>{
+
+	@SuppressWarnings("unchecked")
+	Details save(Details d);
 
 }
