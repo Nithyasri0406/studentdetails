@@ -25,7 +25,7 @@ public class Student {
      public Details add(@RequestBody Details d)
      {
 		 
-    	 //return new Details("abi","yuu@gmail.com","56789","act street");
+    	 //return new Details("abi","abc@gmail.com","56789","act street");
     	 return repos.save(d);
      }
 	 
